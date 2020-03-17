@@ -1,31 +1,37 @@
-# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-
-name: Node.js CI
+name: github pages
 
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    branches:
+      - master
 
 jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [10.x, 12.x]
-
+  deploy:
+    runs-on: ubuntu-18.04
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm ci
-    - run: npm run deploy
-      env:
-        CI: true
-        KEY_GH: a201d33c0900de54f9be3b9be061b7a78dad43e1
+      - uses: actions/checkout@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '10.x'
+
+      - name: Cache dependencies
+        uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - run: npm ci
+      - run: npm run format
+      - run: npm run build
+        env:
+          KEY_GH: ${{ secrets.KEY_GH }}
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.DEPLOY_KEY }}
+          publish_dir: ./public

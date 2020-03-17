@@ -28,4 +28,4 @@ jobs:
     - run: npm run deploy
       env:
         CI: true
-        KEY_GH: 817b10b141705be457ac1e51ac35a277ce8c7ba4
+        KEY_GH: ${{ secrets.KEY_GH }}

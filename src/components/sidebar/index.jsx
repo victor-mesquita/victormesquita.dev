@@ -1,0 +1,72 @@
+import React from "react"
+
+import useThemeContext from "../../hooks/themeContext"
+import Avatar from "./Avatar"
+import AboutMe from "./AboutMe"
+import LocationComponent from "./Location"
+import GitHub from "./GitHub"
+import Contact from "./Contact"
+import Hireable from "./Hireable"
+import SocialMediaItem from "./SocialMediaItem"
+
+import "./style.scss"
+
+const ItemSpacer = props => (
+  <div className="d-flex flex-items-center mb-3" {...props}>
+    {props.children}
+  </div>
+)
+
+export default ({
+  avatarUrl,
+  userName,
+  email,
+  socialMedias,
+  isHireable,
+  login,
+  location,
+  bio,
+}) => {
+  return (
+    <>
+      <Avatar avatarUrl={avatarUrl} />
+      <AboutMe className="mb-5" userName={userName} bio={bio} />
+
+      <div className="f4">
+        <ItemSpacer>
+          <GitHub login={login}></GitHub>
+        </ItemSpacer>
+
+        {email && (
+          <ItemSpacer>
+            <Contact email={email}></Contact>
+          </ItemSpacer>
+        )}
+
+        {location && (
+          <ItemSpacer>
+            <LocationComponent location={location}></LocationComponent>
+          </ItemSpacer>
+        )}
+
+        {isHireable && (
+          <ItemSpacer>
+            <Hireable></Hireable>
+          </ItemSpacer>
+        )}
+
+        {socialMedias && (
+          <ItemSpacer className="d-flex flex-items-center mb-3 flex-justify-center">
+            {socialMedias.map(socialNetwork => (
+              <SocialMediaItem
+                key={socialNetwork.key}
+                networkName={socialNetwork.key}
+                userName={socialNetwork.name}
+              ></SocialMediaItem>
+            ))}
+          </ItemSpacer>
+        )}
+      </div>
+    </>
+  )
+}

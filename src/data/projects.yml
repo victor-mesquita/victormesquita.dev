@@ -1,0 +1,68 @@
+- name: Meu TIM
+  imageUrl: /img/meu-tim.svg
+  description: Aplicação nativa com foco em gestão pessoal de plano TIM.
+  stack:
+    - name: Swift 4.0
+      imageUrl: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/swift/swift.png
+    - name: Xcode 10.2
+      imageUrl: /img/xcode.png
+
+- name: TIM Beta
+  imageUrl: /img/beta.png
+  description: App nativo;  API's e Portais em Rails
+  stack:
+    - name: Ruby on Rails
+      imageUrl: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/rails/rails.png
+    - name: Ruby
+      imageUrl: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/ruby/ruby.png
+    - name: Nginx
+      imageUrl: https://raw.githubusercontent.com/github/explore/85cceaeeaf993ca35664dc37ea24f9237fbbfc14/topics/nginx/nginx.png
+    - name: Passenger
+      imageUrl: /img/pasenger.png
+    - name: MySQL
+      imageUrl: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png
+    - name: Google Cloud
+      imageUrl: /img/gcp.svg
+
+- name: Chatbot TIM
+  imageUrl: /img/watson.png
+  description: Aplicação de chatbot via IBM Watson
+  stack:
+    - name: Angular 7 SSR
+      imageUrl: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png
+    - name: Node
+      imageUrl: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png
+    - name: IBM Watson
+      imageUrl: /img/watson.png
+
+- name: Mock-in
+  imageUrl: /img/mockin.png
+  description: Ferramenta para criação de mocks
+  stack:
+    - name: Vue
+      imageUrl: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/vue/vue.png
+    - name: Elixir
+      imageUrl: /img/elixir.jpeg
+    - name: Postgres
+      imageUrl: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/postgresql/postgresql.png
+    - name: ElectronJS
+      imageUrl: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/electron/electron.png
+
+- name: CREF1
+  description: Aplicação para gestão do profissional de educação física
+  imageUrl: /img/cref.png
+  stack:
+    - name: Ionic
+      imageUrl: /img/ionic.png
+    - name: C#
+      imageUrl: https://raw.githubusercontent.com/github/explore/93d8a67084f94b2a444e510199a6e7622e5b09a3/topics/dotnet/dotnet.png
+
+- name: TIM EasyVendas
+  description: Aplicação de vendas com foco em B2B
+  stack:
+    - name: Angular 1
+      imageUrl: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png
+    - name: C#
+      imageUrl: https://raw.githubusercontent.com/github/explore/93d8a67084f94b2a444e510199a6e7622e5b09a3/topics/dotnet/dotnet.png
+    - name: Cordova
+      imageUrl: /img/cordova.png

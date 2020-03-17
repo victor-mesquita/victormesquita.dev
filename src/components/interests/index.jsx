@@ -1,5 +1,5 @@
 import React from "react"
-import { Heading, Text, Flex, Box, StyledOcticon } from "@primer/components"
+import { StyledOcticon } from "@primer/components"
 import { TriangleLeft } from "@primer/octicons-react"
 import { Link } from "gatsby"
 import InterestItem from "./InterestItem"
@@ -8,18 +8,17 @@ import "./interests.scss"
 
 const Content = ({ interests }) => (
   <>
-    <Heading textAlign="center" fontSize={5}>
-      Meus interesses
-    </Heading>
-    <Text textAlign="center" as="p" color="gray.6" mb="4" className="f4">
+    <h2 className="text-center">Meus interesses</h2>
+
+    <p className="text-gray f4 mb-4 text-center">
       Tecnologias na qual dedico meu tempo.
-    </Text>
+    </p>
 
     <div className="mx-auto project_items">
-      <Flex className="gutter-condensed" flexWrap="wrap">
+      <div className="gutter-condensed d-flex flex-wrap">
         {interests &&
           interests.map(interest => (
-            <div  key={interest.name} className="col-12 col-md-4 mb-3">
+            <div key={interest.name} className="col-12 col-md-4 mb-3">
               <InterestItem
                 name={interest.name}
                 imageUrl={interest.imageUrl}
@@ -27,7 +26,7 @@ const Content = ({ interests }) => (
               ></InterestItem>
             </div>
           ))}
-      </Flex>
+      </div>
       <Link to="/" className="btn btn-invisible btn-block mt-4 rounded-2">
         <StyledOcticon icon={TriangleLeft} mr={2}></StyledOcticon>
         Meus projetos

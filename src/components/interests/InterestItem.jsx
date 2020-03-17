@@ -1,5 +1,4 @@
 import React from "react"
-import { Box, Text, Flex, Details } from "@primer/components"
 
 import useThemeContext from "../../hooks/themeContext"
 

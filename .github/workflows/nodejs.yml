@@ -27,6 +27,8 @@ jobs:
       - run: npm ci
       - run: npm run format
       - run: npm run build
+        env:
+          KEY_GH: ${{ secrets.KEY_GH }}
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

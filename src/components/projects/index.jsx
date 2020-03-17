@@ -28,7 +28,7 @@ const Content = ({ projects }) => (
             </div>
           ))}
       </div>
-      <Link to="/interests" className="btn btn-invisible btn-block mt-4">
+      <Link to="/interests" className="btn btn-invisible btn-block mt-4 border">
         <span className="mr-2">Meus Interesses</span>
         <StyledOcticon icon={TriangleRight}></StyledOcticon>
       </Link>

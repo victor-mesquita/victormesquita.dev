@@ -16,7 +16,7 @@ const Content = ({ projects }) => (
     </Text>
 
     <div className="mx-auto project_items">
-      <div className="gutter-condensed d-flex flex-wrap" flexWrap="wrap">
+      <div className="gutter-condensed d-flex flex-wrap">
         {projects &&
           projects.map(project => (
             <Box className="col-12 col-md-12 col-lg-6 col-xl-4 mb-3">

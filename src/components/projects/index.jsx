@@ -1,6 +1,5 @@
 import React from "react"
-import PropTypes from "prop-types"
-import { Heading, Text, Flex, Box, StyledOcticon } from "@primer/components"
+import { Heading, Text, Box, StyledOcticon } from "@primer/components"
 import ProjectItem from "./ProjectItem"
 import { TriangleRight } from "@primer/octicons-react"
 import { Link } from "gatsby"
@@ -17,7 +16,7 @@ const Content = ({ projects }) => (
     </Text>
 
     <div className="mx-auto project_items">
-      <Flex className="gutter-condensed" flexWrap="wrap">
+      <div className="gutter-condensed d-flex flex-wrap" flexWrap="wrap">
         {projects &&
           projects.map(project => (
             <Box className="col-12 col-md-12 col-lg-6 col-xl-4 mb-3">
@@ -30,7 +29,7 @@ const Content = ({ projects }) => (
             ></ProjectItem>
             </Box>
           ))}
-      </Flex>
+      </div>
       <Link to="/interests" className="btn btn-invisible btn-block mt-4">
         Meus Interesses
         <StyledOcticon icon={TriangleRight} ml={2}></StyledOcticon>

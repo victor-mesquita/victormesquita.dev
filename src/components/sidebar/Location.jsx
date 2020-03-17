@@ -13,10 +13,10 @@ export default ({ location }) => {
         icon={Location}
         size={20}
         verticalAlign="middle"
-        mr={2}
         ariaLabel="Location"
       />
-      {location}
+      <span className="ml-2">
+      {location}</span>
     </>
   )
 }

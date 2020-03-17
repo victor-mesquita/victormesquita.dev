@@ -1,6 +1,6 @@
 import React from "react"
 import { MarkGithub } from "@primer/octicons-react"
-import { StyledOcticon, Link as PrimerLink } from "@primer/components"
+import { StyledOcticon } from "@primer/components"
 
 import useThemeContext from "../../hooks/themeContext"
 
@@ -14,15 +14,15 @@ export default ({ login }) => {
         icon={MarkGithub}
         size={20}
         verticalAlign="middle"
-        mr={2}
         ariaLabel="GitHub"
       />
-      <PrimerLink
+      <a
+        className="ml-2"
         href={`https://github.com/${login}`}
         color={style === "dark" ? "white" : undefined}
       >
         @{login}
-      </PrimerLink>
+      </a>
     </>
   )
 }

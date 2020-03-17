@@ -9,7 +9,7 @@ import "./content.scss"
 const Content = ({ projects }) => (
   <>
     <h2 className="text-center">Projetos</h2>
-    <p lassName="f4 mb-4 text-gray text-center">
+    <p className="f4 mb-4 text-gray text-center">
       Apps, sites e serviços que ajudei a construir ou evoluir ;)
     </p>
 
@@ -29,8 +29,8 @@ const Content = ({ projects }) => (
           ))}
       </div>
       <Link to="/interests" className="btn btn-invisible btn-block mt-4">
-        Meus Interesses
-        <StyledOcticon icon={TriangleRight} ml={2}></StyledOcticon>
+        <span className="mr-2">Meus Interesses</span>
+        <StyledOcticon icon={TriangleRight}></StyledOcticon>
       </Link>
     </div>
   </>

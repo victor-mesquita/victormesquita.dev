@@ -6,8 +6,7 @@ export default ({ avatarUrl }) => {
     <Avatar
       src={avatarUrl}
       alt="user-avatar"
-      className="circle"
-      mb={3}
+      className="circle mb-3"
       size={150}
       borderRadius={"50%"}
       maxWidth={"150px"}

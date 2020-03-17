@@ -28,8 +28,8 @@ const Content = ({ interests }) => (
           ))}
       </div>
       <Link to="/" className="btn btn-invisible btn-block mt-4 rounded-2">
-        <StyledOcticon icon={TriangleLeft} mr={2}></StyledOcticon>
-        Meus projetos
+        <StyledOcticon icon={TriangleLeft}></StyledOcticon>
+        <span className="ml-2">Meus projetos</span>
       </Link>
     </div>
   </>

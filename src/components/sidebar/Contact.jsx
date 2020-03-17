@@ -1,6 +1,6 @@
 import React from "react"
 import { Mail } from "@primer/octicons-react"
-import { StyledOcticon, Box, Link as PrimerLink } from "@primer/components"
+import { StyledOcticon } from "@primer/components"
 
 import useThemeContext from "../../hooks/themeContext"
 
@@ -14,15 +14,15 @@ export default ({ email }) => {
         icon={Mail}
         size={20}
         verticalAlign="middle"
-        mr={2}
         ariaLabel="email"
       />
-      <PrimerLink
+      <a
+        className="ml-2"
         href={`mailto:${email}`}
         color={style === "dark" ? "white" : undefined}
       >
         {email}
-      </PrimerLink>
+      </a>
     </>
   )
 }

@@ -8,6 +8,7 @@ module.exports = {
   siteMetadata: {
     title: `Victor Mesquita | Fullstack developer`,
   },
+  pathPrefix: "/personal-website",
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-react-helmet",

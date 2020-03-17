@@ -28,3 +28,4 @@ jobs:
     - run: npm run deploy
       env:
         CI: true
+        KEY_GH: a201d33c0900de54f9be3b9be061b7a78dad43e1

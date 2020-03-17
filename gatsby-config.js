@@ -8,7 +8,7 @@ module.exports = {
   siteMetadata: {
     title: `Victor Mesquita | Fullstack developer`,
   },
-  pathPrefix: "/personal-website",
+  pathPrefix: "/",
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-react-helmet",
@@ -28,7 +28,7 @@ module.exports = {
         fieldName: "github",
         url: "https://api.github.com/graphql",
         headers: {
-          Authorization: `bearer f128cd03bd49ae28f5bff036f6e74ceff7fc9e0f`,
+          Authorization: `bearer b8ca7911d4e824308f02ed0cdcd569fa8c940abb`,
         }
       },
     },

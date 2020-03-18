@@ -1,11 +1,7 @@
 import React from "react"
 import { Details } from "@primer/components"
 
-import useThemeContext from "../../hooks/themeContext"
-
 export default ({ name, description, imageUrl, stack }) => {
-  const { style, theme } = useThemeContext()
-
   function NoImageProject() {
     return (
       <div className="bg-blue-light f4 text-gray-light text-bold rounded-1 flex-shrink-0 text-center mx-auto mb-3 no_image_project">
@@ -25,6 +21,7 @@ export default ({ name, description, imageUrl, stack }) => {
               width="64"
               height="64"
               className="rounded-1 mb-3"
+              alt="Projeto sem imagem"
             ></img>
           ) : (
             <NoImageProject />

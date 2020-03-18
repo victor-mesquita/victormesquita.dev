@@ -1,10 +1,6 @@
 import React from "react"
 
-import useThemeContext from "../../hooks/themeContext"
-
 export default ({ name, imageUrl, skillScores }) => {
-  const { style, theme } = useThemeContext()
-
   return (
     <>
       <div className="github-component d-flex flex-items-center flex-justify-around bg-white p-4 flex-column rounded-2 border border-gray-light">

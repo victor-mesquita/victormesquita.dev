@@ -1,9 +1,7 @@
 import React from "react"
 import { BorderBox } from "@primer/components"
 
-import useThemeContext from "../../hooks/themeContext"
-
-export default ({}) => {
+export default () => {
   return (
     <>
       <BorderBox
@@ -17,7 +15,12 @@ export default ({}) => {
         color="white"
         marginBottom="5"
       >
-        <span className="f5 rounded-2">Buscando oportunidades 🙏🏻</span>
+        <span className="f5 rounded-2">
+          Buscando oportunidades
+          <span role="img" aria-label="Buscando oportunidade">
+            🙏🏻
+          </span>
+        </span>
       </BorderBox>
     </>
   )

@@ -5,7 +5,7 @@ import { StyledOcticon } from "@primer/components"
 import useThemeContext from "../../hooks/themeContext"
 
 export default ({ login }) => {
-  const { style, theme } = useThemeContext()
+  const { theme } = useThemeContext()
 
   return (
     <>
@@ -17,9 +17,8 @@ export default ({ login }) => {
         ariaLabel="GitHub"
       />
       <a
-        className="ml-2"
+        className={`ml-2 ${theme.linkClass}`}
         href={`https://github.com/${login}`}
-        color={style === "dark" ? "white" : undefined}
       >
         @{login}
       </a>

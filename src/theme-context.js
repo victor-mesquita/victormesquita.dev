@@ -7,11 +7,17 @@ export const themes = {
     ...primerTheme,
     background: "#ffffff",
     iconColor: "#24292e",
+    textClass: "text-gray",
+    linkClass: undefined,
+    invertedStyle: "dark"
   },
   dark: {
     ...primerTheme,
     background: "#2f363d",
     iconColor: "#ffffff",
+    textClass: "text-white",
+    linkClass: "text-white",
+    invertedStyle: "light"
   },
   flexa: {
     columns: 24,

@@ -1,9 +1,7 @@
 import React from "react"
-import useThemeContext from "../../hooks/themeContext"
 import socialMediaData from "../../data/social_media_data.yml"
 
 export default ({ networkName, userName }) => {
-  const { theme } = useThemeContext()
   const socialNetwork = socialMediaData[networkName]
 
   return (

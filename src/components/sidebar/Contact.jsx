@@ -5,7 +5,7 @@ import { StyledOcticon } from "@primer/components"
 import useThemeContext from "../../hooks/themeContext"
 
 export default ({ email }) => {
-  const { style, theme } = useThemeContext()
+  const { theme } = useThemeContext()
 
   return (
     <>
@@ -16,11 +16,7 @@ export default ({ email }) => {
         verticalAlign="middle"
         ariaLabel="email"
       />
-      <a
-        className="ml-2"
-        href={`mailto:${email}`}
-        color={style === "dark" ? "white" : undefined}
-      >
+      <a className={`ml-2 ${theme.linkClass}`} href={`mailto:${email}`}>
         {email}
       </a>
     </>

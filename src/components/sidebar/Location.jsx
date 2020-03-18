@@ -15,7 +15,7 @@ export default ({ location }) => {
         verticalAlign="middle"
         ariaLabel="Location"
       />
-      <span className="ml-2">
+      <span className={`ml-2 ${theme.textClass}`}>
       {location}</span>
     </>
   )

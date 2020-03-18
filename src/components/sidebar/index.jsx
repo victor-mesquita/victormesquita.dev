@@ -10,6 +10,7 @@ import Hireable from "./Hireable"
 import SocialMediaItem from "./SocialMediaItem"
 
 import "./style.scss"
+import SwitchTheme from "./SwitchTheme"
 
 const ItemSpacer = props => (
   <div className="d-flex flex-items-center mb-3" {...props}>
@@ -27,8 +28,21 @@ export default ({
   location,
   bio,
 }) => {
+  const { style, setTheme } = useThemeContext()
+
+  function onThemeChange(e) {
+    const newStyle = style === "dark" ? "light" : "dark"
+
+    setTheme(newStyle)
+  }
+
   return (
     <>
+      <SwitchTheme
+        className="change-theme-button"
+        onClick={onThemeChange}
+      ></SwitchTheme>
+
       <Avatar avatarUrl={avatarUrl} />
       <AboutMe className="mb-5" userName={userName} bio={bio} />
 

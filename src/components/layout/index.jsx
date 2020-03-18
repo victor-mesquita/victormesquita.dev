@@ -5,7 +5,7 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 
 function Container({ user, children, socialMedias }) {
-  const { style, setTheme, theme } = useThemeContext()
+  const { style, theme } = useThemeContext()
 
   useEffect(() => {
     document.body.style.backgroundColor = theme.background
@@ -22,7 +22,7 @@ function Container({ user, children, socialMedias }) {
           style === "dark"
             ? "bg-gray-dark"
             : "border-md-right border-gray-light bg-white"
-        } col-md-5 col-lg-4 col-xl-3 px-4 px-md-6 px-lg-7 py-6 d-flex flex-column flex-items-center`}
+        } col-md-5 col-lg-4 col-xl-3 px-4 px-md-6 px-lg-7 py-6 d-flex flex-column flex-items-center side-bar-container`}
       >
         <Sidebar
           avatarUrl={user.avatarUrl}

@@ -1,15 +1,13 @@
 import React from "react"
-import { Radar } from "@nivo/radar"
+import { ResponsiveRadar } from "@nivo/radar"
 
 export default ({ data, keys, indexBy }) => {
   return (
-    <Radar
+    <ResponsiveRadar
       data={data}
       keys={keys}
       indexBy={indexBy}
       maxValue="auto"
-      width={375}
-      height={300}
       margin={{ top: 70, right: 80, bottom: 40, left: 80 }}
       curve="linearClosed"
       borderWidth={2}

@@ -36,7 +36,7 @@ function Container({ user, children, socialMedias }) {
         ></Sidebar>
       </div>
       <div
-        className="col-md-7 col-lg-8 col-xl-9 px-4 py-6 px-lg-7 border-top border-md-top-0"
+        className="col-md-7 col-lg-8 col-xl-9 px-4 py-8 py-md-6 px-lg-7 border-top border-md-top-0"
         style={{ backgroundColor: style === "dark" ? "#2f363d" : "#fafbfc" }}
       >
         {children}

@@ -32,10 +32,7 @@ const Content = ({ projects }) => {
               </div>
             ))}
         </div>
-        <Link
-          to="/interests"
-          className="btn btn-outline mt-2 float-right"
-        >
+        <Link to="/interests" className="btn btn-outline btn-md-block mt-2 float-right">
           <span>Veja meus interesses</span>
           <StyledOcticon className="ml-2" icon={TriangleRight}></StyledOcticon>
         </Link>

@@ -19,3 +19,11 @@
 .project_items {
     max-width: 1024px;
 }
+
+.btn-md-block {
+  @media (min-width: 0) and (max-width: 1024px)  {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}

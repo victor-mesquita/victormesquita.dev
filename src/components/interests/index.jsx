@@ -39,7 +39,7 @@ const Content = ({ theFutureItems, proficiencySkills }) => {
             <TheFutureList items={theFutureItems}></TheFutureList>
           </div>
         </div>
-        <Link to="/" className="btn btn-outline mt-4 border">
+        <Link to="/" className="btn btn-outline btn-md-block mt-4 border">
           <StyledOcticon icon={TriangleLeft}></StyledOcticon>
           <span className="ml-2">Meus projetos</span>
         </Link>

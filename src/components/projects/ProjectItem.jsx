@@ -56,15 +56,6 @@ export default ({ name, description, imageUrl, stack }) => {
                   </li>
                 ))}
               </ul>
-              <div className="Box-footer hide-md hide-lg hide-xl">
-                <button
-                  type="button"
-                  className="btn btn-block"
-                  data-close-dialog
-                >
-                  Fechar
-                </button>
-              </div>
             </div>
           </Details>
         </div>

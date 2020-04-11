@@ -35,7 +35,7 @@ const Content = ({ theFutureItems, proficiencySkills }) => {
         </div>
         <Link
           to="/"
-          className="btn btn-outline btn-block mt-4 rounded-2 border"
+          className="btn btn-outline mt-4 border"
         >
           <StyledOcticon icon={TriangleLeft}></StyledOcticon>
           <span className="ml-2">Meus projetos</span>

@@ -1,0 +1,17 @@
+- name: Back-end
+  exp: 70
+
+- name: Font-end
+  exp: 70
+
+- name: Mobile
+  exp: 40
+
+- name: Database
+  exp: 50
+
+- name: Cloud
+  exp: 20
+
+- name: Design
+  exp: 40

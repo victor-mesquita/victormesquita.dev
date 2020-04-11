@@ -4,6 +4,7 @@ import socialMediaData from "../../data/social_media_data.yml"
 export default ({ networkName, userName }) => {
   const socialNetwork = socialMediaData[networkName]
 
+
   return (
     <div className="mb-3 mr-3">
       <a href={`${socialNetwork.profileUrlPrefix}${userName}`}>

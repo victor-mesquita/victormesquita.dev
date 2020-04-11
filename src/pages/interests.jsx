@@ -2,7 +2,8 @@ import React from "react"
 import Layout from "../components/layout"
 import Interests from "../components/interests"
 import { useStaticQuery, graphql } from "gatsby"
-import interests from "../data/interests.yml"
+import futureItems from "../data/focus_in_the_future.yml"
+import proficiencySkills from "../data/proficiency_graph.yml"
 
 import "../../sass/style.scss"
 
@@ -30,7 +31,10 @@ export default () => {
 
   return (
     <Layout user={user}>
-      <Interests interests={interests}></Interests>
+      <Interests
+        proficiencySkills={proficiencySkills}
+        theFutureItems={futureItems}
+      ></Interests>
     </Layout>
   )
 }

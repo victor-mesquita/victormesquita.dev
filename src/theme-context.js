@@ -40,13 +40,10 @@ export const themes = {
 
 const windowGlobal = typeof window !== "undefined" && window
 const defaultTheme = "light"
-const localTheme =
-  (windowGlobal.localStorage && windowGlobal.localStorage.getItem("theme")) ||
-  defaultTheme
 
 const initialState = {
-  style: localTheme,
-  theme: themes[localTheme],
+  style: defaultTheme,
+  theme: themes[defaultTheme],
 }
 
 const reducer = (state, { value, type }) => {

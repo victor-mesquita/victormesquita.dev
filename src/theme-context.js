@@ -9,7 +9,7 @@ export const themes = {
     iconColor: "#24292e",
     textClass: "text-gray",
     linkClass: undefined,
-    invertedStyle: "dark"
+    invertedStyle: "dark",
   },
   dark: {
     ...primerTheme,
@@ -17,7 +17,7 @@ export const themes = {
     iconColor: "#ffffff",
     textClass: "text-white",
     linkClass: "text-white",
-    invertedStyle: "light"
+    invertedStyle: "light",
   },
   flexa: {
     columns: 24,
@@ -37,10 +37,10 @@ export const themes = {
 }
 
 const windowGlobal = typeof window !== "undefined" && window
-
+const defaultTheme = "light"
 const localTheme =
   (windowGlobal.localStorage && windowGlobal.localStorage.getItem("theme")) ||
-  "light"
+  defaultTheme
 
 const initialState = {
   style: localTheme,
@@ -48,14 +48,17 @@ const initialState = {
 }
 
 const reducer = (state, { value, type }) => {
-  windowGlobal.localStorage && windowGlobal.localStorage.setItem("theme", value)
+  const themeValue = value || defaultTheme
+  windowGlobal.localStorage &&
+    windowGlobal.localStorage.setItem("theme", themeValue)
+
   switch (type) {
     case "TOGGLE_THEME":
       return state.style === "light"
         ? { theme: themes.dark, style: "dark" }
         : { theme: themes.light, style: "light" }
     case "CHANGE_THEME":
-      return { theme: themes[value], style: value }
+      return { theme: themes[themeValue], style: themeValue }
     default:
       return state
   }

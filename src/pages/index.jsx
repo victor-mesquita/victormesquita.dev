@@ -12,8 +12,8 @@ export default () => {
   const themeContext = useThemeContext()
 
   useEffect(() => {
-    const saved_theme = localStorage.getItem("theme")
-    themeContext.setTheme(saved_theme)
+    const savedTheme = localStorage.getItem("theme")
+    themeContext.setTheme(savedTheme)
   }, [])
 
   const {

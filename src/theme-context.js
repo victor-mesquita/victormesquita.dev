@@ -37,10 +37,9 @@ export const themes = {
 }
 
 const windowGlobal = typeof window !== "undefined" && window
+const defaultTheme = "light"
+const localTheme = (windowGlobal.localStorage && windowGlobal.localStorage.getItem("theme")) || defaultTheme
 
-const localTheme =
-  (windowGlobal.localStorage && windowGlobal.localStorage.getItem("theme")) ||
-  "light"
 
 const initialState = {
   style: localTheme,
@@ -48,7 +47,7 @@ const initialState = {
 }
 
 const reducer = (state, { value, type }) => {
-  windowGlobal.localStorage && windowGlobal.localStorage.setItem("theme", value)
+  windowGlobal.localStorage && windowGlobal.localStorage.setItem("theme", value || defaultTheme)
   switch (type) {
     case "TOGGLE_THEME":
       return state.style === "light"

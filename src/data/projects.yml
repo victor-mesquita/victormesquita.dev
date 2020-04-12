@@ -1,5 +1,5 @@
 - name: Meu TIM
-  imageUrl: /img/meu-tim.svg
+  imageUrl: /img/meu-tim.png
   description: Aplicação nativa com foco em gestão pessoal de plano TIM.
   stack:
     - name: Swift 4.0
@@ -50,7 +50,7 @@
 
 - name: CREF1
   description: Aplicação para gestão do profissional de educação física
-  imageUrl: /img/cref.png
+  imageUrl: /img/cref1.webp
   stack:
     - name: Ionic
       imageUrl: /img/ionic.png

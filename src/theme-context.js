@@ -6,10 +6,11 @@ export const themes = {
   light: {
     ...primerTheme,
     background: "#ffffff",
-    iconColor: "#24292e",
+    iconColor: "#586069",
     textClass: "text-gray",
-    linkClass: undefined,
+    linkClass: null,
     invertedStyle: "dark",
+    buttonBackground: null
   },
   dark: {
     ...primerTheme,
@@ -18,6 +19,7 @@ export const themes = {
     textClass: "text-white",
     linkClass: "text-white",
     invertedStyle: "light",
+    buttonBackground: "#1f2123"
   },
   flexa: {
     columns: 24,

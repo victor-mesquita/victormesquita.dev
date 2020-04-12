@@ -1,7 +1,10 @@
 import React from "react"
 import { Details } from "@primer/components"
+import useThemeContext from "../../hooks/themeContext"
 
 export default ({ name, description, imageUrl, stack }) => {
+  const { theme, style } = useThemeContext()
+
   function NoImageProject() {
     return (
       <div className="bg-blue-light f4 text-gray-light text-bold rounded-1 flex-shrink-0 text-center mx-auto mb-3 no_image_project">
@@ -12,7 +15,11 @@ export default ({ name, description, imageUrl, stack }) => {
 
   return (
     <>
-      <div className="github-component border border-gray-light rounded-1 bg-white p-4">
+      <div
+        className={`github-component ${
+          style === "dark" ? "bg-gray-dark" : "border border-gray-light"
+        } rounded-1 bg-white p-4`}
+      >
         <div className="d-flex flex-column flex-items-center">
           {imageUrl ? (
             <img
@@ -27,11 +34,12 @@ export default ({ name, description, imageUrl, stack }) => {
             <NoImageProject />
           )}
 
-          <p className="f3">{name}</p>
+          <p className={`f3 ${style === "dark" ? "text-white" : ""}`}>{name}</p>
           <Details overlay={true} className="width-full stack_button">
             <summary
               className="btn btn-outline btn-block mb-2"
               aria-haspopup="dialog"
+              style={{ backgroundColor: theme.buttonBackground }}
             >
               Ver stack
             </summary>

@@ -5,7 +5,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import socialMedias from "../data/social_media.yml"
 import projects from "../data/projects.yml"
 import useThemeContext from "../hooks/themeContext"
-
 import "../../sass/style.scss"
 
 export default () => {

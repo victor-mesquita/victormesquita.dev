@@ -1,7 +1,7 @@
 import React from "react"
 import { StyledOcticon } from "@primer/components"
 import ProjectItem from "./ProjectItem"
-import { TriangleRight } from "@primer/octicons-react"
+import { ChevronRight } from "@primer/octicons-react"
 import { Link } from "gatsby"
 import useThemeContext from "../../hooks/themeContext"
 
@@ -32,9 +32,17 @@ const Content = ({ projects }) => {
               </div>
             ))}
         </div>
-        <Link to="/interests" className="btn btn-outline btn-md-block mt-2 float-right">
+        <Link
+          to="/interests"
+          style={{ backgroundColor: theme.buttonBackground }}
+          className="btn btn-outline btn-md-block mt-2 float-right"
+        >
           <span>Veja meus interesses</span>
-          <StyledOcticon className="ml-2" icon={TriangleRight}></StyledOcticon>
+          <StyledOcticon
+            className="ml-2"
+            size={14}
+            icon={ChevronRight}
+          ></StyledOcticon>
         </Link>
       </div>
     </>

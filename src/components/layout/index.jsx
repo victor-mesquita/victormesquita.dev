@@ -5,11 +5,19 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 
 function Container({ user, children, socialMedias }) {
-  const { style, theme } = useThemeContext()
+  const { style, theme, setTheme } = useThemeContext()
 
   useEffect(() => {
     document.body.style.backgroundColor = theme.background
   }, [theme.background])
+
+  useEffect(() => {
+    setTimeout(() => {
+      const savedTheme = localStorage.getItem("theme")
+      setTheme(savedTheme)
+    })
+  }, [])
+
   return (
     <div
       className={`d-md-flex min-height-full ${style !== "dark" &&

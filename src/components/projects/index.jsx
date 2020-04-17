@@ -1,9 +1,9 @@
 import React from "react"
 import { StyledOcticon } from "@primer/components"
-import ProjectItem from "./ProjectItem"
+import ProjectItem from "./project-item"
 import { ChevronRight } from "@primer/octicons-react"
 import { Link } from "gatsby"
-import useThemeContext from "../../hooks/themeContext"
+import useThemeContext from "../../hooks/theme-context"
 
 import "./content.scss"
 

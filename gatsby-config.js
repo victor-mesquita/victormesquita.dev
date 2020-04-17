@@ -28,7 +28,7 @@ module.exports = {
         fieldName: "github",
         url: "https://api.github.com/graphql",
         headers: {
-          Authorization: `bearer ${process.env.NODE_ENV == "production" ? process.env.KEY_GH : 'eee5a9ca8dbc3417b9ee32f7d978e53bbd6cbd4b'}`,
+          Authorization: `bearer ${process.env.NODE_ENV == "production" ? process.env.KEY_GH : '4f68f1f72f7a23fbec0618a8959bca58cd21ed1f'}`,
         }
       },
     },
@@ -38,5 +38,20 @@ module.exports = {
         precachePages: [`/`],
       },
     },
+    {
+      resolve: "gatsby-plugin-firebase",
+      options: {
+        credentials: {
+          apiKey: process.env.GA_API_KEY,
+          authDomain: process.env.GA_AUTH_DOMAIN,
+          databaseURL: process.env.GA_DATABASE_URL,
+          projectId:  process.env.GA_PROJECT_ID,
+          storageBucket:  process.env.GA_STORAGE_BUCKET,
+          messagingSenderId:  process.env.GA_MESSAGING_SENDER_ID,
+          appId:  process.env.GA_APP_ID,
+          measurementId:  process.env.GA_MEASUREMENT_ID
+        }
+      }
+    }
   ],
 }

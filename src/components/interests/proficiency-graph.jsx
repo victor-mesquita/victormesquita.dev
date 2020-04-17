@@ -1,6 +1,6 @@
 import React from "react"
 import { ResponsiveRadar } from "@nivo/radar"
-import useThemeContext from "../../hooks/themeContext"
+import useThemeContext from "../../hooks/theme-context"
 
 export default ({ data, keys, indexBy }) => {
   const { style, theme } = useThemeContext()

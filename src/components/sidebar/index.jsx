@@ -1,16 +1,16 @@
 import React from "react"
 
-import useThemeContext from "../../hooks/themeContext"
-import Avatar from "./Avatar"
-import AboutMe from "./AboutMe"
-import LocationComponent from "./Location"
-import GitHub from "./GitHub"
-import Contact from "./Contact"
-import Hireable from "./Hireable"
-import SocialMediaItem from "./SocialMediaItem"
+import useThemeContext from "../../hooks/theme-context"
+import Avatar from "./avatar"
+import AboutMe from "./about-me"
+import LocationComponent from "./location"
+import GitHub from "./github"
+import Contact from "./contact"
+import Hireable from "./hireable"
+import SocialMediaItem from "./social-media-item"
 
 import "./style.scss"
-import SwitchTheme from "./SwitchTheme"
+import SwitchTheme from "./switch-theme"
 
 const ItemSpacer = props => (
   <div className="d-flex flex-items-center mb-3" {...props}>

@@ -2,7 +2,7 @@ import React from "react"
 import { Mail } from "@primer/octicons-react"
 import { StyledOcticon } from "@primer/components"
 
-import useThemeContext from "../../hooks/themeContext"
+import useThemeContext from "../../hooks/theme-context"
 
 export default ({ email }) => {
   const { theme } = useThemeContext()

@@ -4,7 +4,7 @@ import { ChevronLeft } from "@primer/octicons-react"
 import { Link } from "gatsby"
 import TheFutureList from "./the-future-list"
 import ProficiencyGraph from "./proficiency-graph"
-import useThemeContext from "../../hooks/themeContext"
+import useThemeContext from "../../hooks/theme-context"
 
 import "./interests.scss"
 

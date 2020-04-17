@@ -1,7 +1,7 @@
 import React from "react"
 import { Location } from "@primer/octicons-react"
 import { StyledOcticon } from "@primer/components"
-import useThemeContext from "../../hooks/themeContext"
+import useThemeContext from "../../hooks/theme-context"
 
 export default ({ location }) => {
   const { theme } = useThemeContext()

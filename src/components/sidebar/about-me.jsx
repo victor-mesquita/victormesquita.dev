@@ -1,5 +1,5 @@
 import React from "react"
-import useThemeContext from "../../hooks/themeContext"
+import useThemeContext from "../../hooks/theme-context"
 
 export default props => {
   const { userName, bio, className } = props

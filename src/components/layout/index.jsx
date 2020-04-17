@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import useThemeContext from "../../hooks/themeContext"
+import useThemeContext from "../../hooks/theme-context"
 import Sidebar from "../../components/sidebar"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"

@@ -1,6 +1,6 @@
 import React from "react"
 import { Details } from "@primer/components"
-import useThemeContext from "../../hooks/themeContext"
+import useThemeContext from "../../hooks/theme-context"
 
 export default ({ name, description, imageUrl, stack }) => {
   const { theme, style } = useThemeContext()
@@ -44,7 +44,7 @@ export default ({ name, description, imageUrl, stack }) => {
               Ver stack
             </summary>
 
-            <div className="Box Box--overlay anim-fade-in fast stack__body width-full">
+            <div className="Box mb-2 Box--overlay anim-fade-in fast stack__body width-full">
               <div className="Box-body overflow-auto">
                 <p>{description}</p>
               </div>

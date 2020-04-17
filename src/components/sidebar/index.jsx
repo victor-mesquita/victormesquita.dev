@@ -1,12 +1,12 @@
 import React from "react"
 
 import useThemeContext from "../../hooks/theme-context"
-import Avatar from "./Avatar"
+import Avatar from "./avatar"
 import AboutMe from "./about-me"
-import LocationComponent from "./Location"
+import LocationComponent from "./location"
 import GitHub from "./github"
-import Contact from "./Contact"
-import Hireable from "./Hireable"
+import Contact from "./contact"
+import Hireable from "./hireable"
 import SocialMediaItem from "./social-media-item"
 
 import "./style.scss"

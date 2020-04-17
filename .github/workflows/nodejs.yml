@@ -30,6 +30,14 @@ jobs:
         env:
           KEY_GH: ${{ secrets.KEY_GH }}
           NODE_ENV: ${{ secrets.NODE_ENV }}
+          GA_API_KEY: ${{ secrets.GA_API_KEY }}
+          GA_AUTH_DOMAIN: ${{ secrets.GA_AUTH_DOMAIN }}
+          GA_DATABASE_URL: ${{ secrets.GA_DATABASE_URL }}
+          GA_PROJECT_ID: ${{ secrets.GA_PROJECT_ID }}
+          GA_STORAGE_BUCKET: ${{ secrets.GA_STORAGE_BUCKET }}
+          GA_MESSAGING_SENDER_ID: ${{ secrets.GA_MESSAGING_ID }}
+          GA_APP_ID: ${{ secrets.GA_APP_ID }}
+          GA_MEASUREMENT_ID: ${{ secrets.GA_MEASUREMENT_ID }}
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

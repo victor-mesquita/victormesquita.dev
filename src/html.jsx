@@ -5,10 +5,10 @@ class HTML extends React.Component {
     return (
       <html lang="en" className="min-height-full">
         <head>
-          <meta name="description" content="" />
-          <meta property="og:title" content="" />
+          <meta name="description" content="Victor Mesquita - Desenvolvedor fullstack com experiência em .NET, Node, Ruby, React, Vue e Angular." />
+          <meta property="og:title" content="Victor Mesquita - Projeto e Apps que desenvolvi" />
           <meta property="og:image" content="" />
-          <meta property="og:description" content="" />
+          <meta property="og:description" content="Desenvolvedor fullstack com experiência em .NET, Node, Ruby, React, Vue e Angular." />
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"

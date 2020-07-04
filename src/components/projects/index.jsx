@@ -14,7 +14,7 @@ const Content = ({ projects }) => {
     <>
       <h2 className={`text-center ${theme.textClass}`}>Projetos</h2>
       <p className={`f4 mb-4 text-gray text-center ${theme.textClass}`}>
-        Apps, sites e serviços que ajudei a construir ou evoluir ;)
+        Veja um pouco sobre cada projeto em que tive o prazer de fazer parte.
       </p>
 
       <div className="mx-auto project_items">
@@ -37,7 +37,7 @@ const Content = ({ projects }) => {
           style={{ backgroundColor: theme.buttonBackground }}
           className="btn btn-outline btn-md-block mt-2 float-right"
         >
-          <span>Veja meus interesses</span>
+          <span>Meus interesses</span>
           <StyledOcticon
             className="ml-2"
             size={14}

@@ -7,7 +7,7 @@ export default ({ location }) => {
   const { theme } = useThemeContext()
 
   return (
-    <>
+    <div>
       <StyledOcticon
         color={theme.iconColor}
         icon={Location}
@@ -17,6 +17,6 @@ export default ({ location }) => {
       />
       <span className={`ml-2 ${theme.textClass}`}>
       {location}</span>
-    </>
+    </div>
   )
 }

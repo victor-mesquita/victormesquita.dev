@@ -42,18 +42,6 @@ const Content = ({ theFutureItems, proficiencySkills }) => {
             <TheFutureList items={theFutureItems}></TheFutureList>
           </div>
         </div>
-        <Link
-          to="/"
-          style={{ backgroundColor: theme.buttonBackground }}
-          className="btn btn-outline btn-md-block mt-4"
-        >
-          <StyledOcticon
-            className="mr-2"
-            size={14}
-            icon={ChevronLeft}
-          ></StyledOcticon>
-          <span>Meus projetos</span>
-        </Link>
       </div>
     </>
   )

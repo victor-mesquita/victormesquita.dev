@@ -3,7 +3,7 @@ import { BorderBox } from "@primer/components"
 
 export default () => {
   return (
-    <>
+    <div>
       <BorderBox
         display={"inline-block"}
         borderRadius={2}
@@ -22,6 +22,6 @@ export default () => {
           </span>
         </span>
       </BorderBox>
-    </>
+    </div>
   )
 }

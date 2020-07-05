@@ -8,7 +8,7 @@ export default ({ email }) => {
   const { theme } = useThemeContext()
 
   return (
-    <>
+    <div>
       <StyledOcticon
         color={theme.iconColor}
         icon={Mail}
@@ -19,6 +19,6 @@ export default ({ email }) => {
       <a className={`ml-2 ${theme.linkClass}`} href={`mailto:${email}`}>
         {email}
       </a>
-    </>
+    </div>
   )
 }

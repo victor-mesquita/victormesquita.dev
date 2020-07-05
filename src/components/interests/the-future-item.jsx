@@ -23,7 +23,7 @@ export default ({ description, percentage }) => {
         <span className="f6 flex-self-end">{percentage}/100%</span>
       </div>
       <span className="Progress Progress--small">
-        <span className="bg-blue" style={{ width: percentage }}></span>
+        <span className="bg-blue" style={{ width: `${percentage}%` }}></span>
       </span>
     </li>
   )

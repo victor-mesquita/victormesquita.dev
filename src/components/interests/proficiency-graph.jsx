@@ -3,13 +3,13 @@ import { ResponsiveRadar } from "@nivo/radar"
 import useThemeContext from "../../hooks/theme-context"
 
 export default ({ data, keys, indexBy }) => {
-  const { style, theme } = useThemeContext()
+  const { style } = useThemeContext()
 
   const nivoTheme = {
     axis: {
       ticks: {
         text: {
-          fill: style == "dark" ? "#ffffff" : "#2f363d",
+          fill: style === "dark" ? "#ffffff" : "#2f363d",
         },
       },
     },

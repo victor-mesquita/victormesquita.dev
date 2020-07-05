@@ -8,7 +8,7 @@ export default ({ login }) => {
   const { theme } = useThemeContext()
 
   return (
-    <>
+    <div>
       <StyledOcticon
         color={theme.iconColor}
         icon={MarkGithub}
@@ -22,6 +22,6 @@ export default ({ login }) => {
       >
         @{login}
       </a>
-    </>
+    </div>
   )
 }

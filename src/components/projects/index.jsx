@@ -1,8 +1,5 @@
 import React from "react"
-import { StyledOcticon } from "@primer/components"
 import ProjectItem from "./project-item"
-import { ChevronRight } from "@primer/octicons-react"
-import { Link } from "gatsby"
 import useThemeContext from "../../hooks/theme-context"
 
 import "./content.scss"
@@ -21,7 +18,7 @@ const Content = ({ projects }) => {
         <div className="gutter-condensed d-flex flex-wrap">
           {projects &&
             projects.map(project => (
-              <div className="col-12 col-md-12 col-lg-6 col-xl-4 mb-3">
+              <div className="col-12 col-md-12 col-lg-6 mb-3">
                 <ProjectItem
                   name={project.name}
                   description={project.description}
@@ -32,18 +29,6 @@ const Content = ({ projects }) => {
               </div>
             ))}
         </div>
-        <Link
-          to="/interests"
-          style={{ backgroundColor: theme.buttonBackground }}
-          className="btn btn-outline btn-md-block mt-2 float-right"
-        >
-          <span>Meus interesses</span>
-          <StyledOcticon
-            className="ml-2"
-            size={14}
-            icon={ChevronRight}
-          ></StyledOcticon>
-        </Link>
       </div>
     </>
   )

@@ -7,22 +7,16 @@ import LocationComponent from "./location"
 import GitHub from "./github-user"
 import Contact from "./contact"
 import Hireable from "./hireable"
-import SocialMediaItem from "./social-media-item"
+import MenuItem from "./menu-item"
 
 import "./style.scss"
 import SwitchTheme from "./switch-theme"
-
-const ItemSpacer = props => (
-  <div className="d-flex flex-items-center mb-3" {...props}>
-    {props.children}
-  </div>
-)
 
 export default ({
   avatarUrl,
   userName,
   email,
-  socialMedias,
+  menus,
   isHireable,
   login,
   location,
@@ -37,50 +31,36 @@ export default ({
   }
 
   return (
-    <>
+    <div
+      className={`sidebar ${style} col-md-5 col-lg-4 col-xl-3 px-4 px-md-6 px-lg-7 py-6`}
+    >
       <SwitchTheme
         className="change-theme-button"
         onClick={onThemeChange}
       ></SwitchTheme>
 
       <Avatar avatarUrl={avatarUrl} />
+
       <AboutMe className="mb-5" userName={userName} bio={bio} />
 
-      <div className="f4">
-        <ItemSpacer>
-          <GitHub login={login}></GitHub>
-        </ItemSpacer>
+      <div className="social-content">
+        <GitHub login={login}></GitHub>
 
-        {email && (
-          <ItemSpacer>
-            <Contact email={email}></Contact>
-          </ItemSpacer>
-        )}
+        {email && <Contact email={email}></Contact>}
 
         {location && (
-          <ItemSpacer>
-            <LocationComponent location={location}></LocationComponent>
-          </ItemSpacer>
+          <LocationComponent location={location}></LocationComponent>
         )}
 
-        {isHireable && (
-          <ItemSpacer>
-            <Hireable></Hireable>
-          </ItemSpacer>
-        )}
-
-        {socialMedias && (
-          <ItemSpacer className="d-flex flex-items-center mb-3 flex-justify-center">
-            {socialMedias.map(socialNetwork => (
-              <SocialMediaItem
-                key={socialNetwork.key}
-                networkName={socialNetwork.key}
-                userName={socialNetwork.name}
-              ></SocialMediaItem>
-            ))}
-          </ItemSpacer>
-        )}
+        {isHireable && <Hireable></Hireable>}
       </div>
-    </>
+
+      <div className="divider"></div>
+
+      <div className="custom-menu">
+        <MenuItem name="Projetos" page="/"></MenuItem>
+        <MenuItem name="Interesses" page="/interests"></MenuItem>
+      </div>
+    </div>
   )
 }

@@ -1,8 +1,8 @@
 - description: Microserviços - Estudo aprofundado dos problemas e soluções existentes da arquitetura
-  percentage: 50
+  percentage: 100
 
 - description: Google Cloud Platform - Service stack
-  percentage: 60
+  percentage: 100
 
 - description: Event Driven Architecture vs Request Driven Model
   percentage: 100

@@ -1,5 +1,5 @@
 - name: TIM Beta V2
-  imageUrl: /img/beta.png
+  imageUrl: /img/timbetav2.webp
   description: Desenvolvimento de novo modelo de game e experiência unificada para usuários BETA.
   stack:
     - name: .NET Core

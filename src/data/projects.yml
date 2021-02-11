@@ -1,15 +1,23 @@
-- name: Meu TIM
-  imageUrl: /img/meu-tim.png
-  description: Aplicação nativa com foco em gestão pessoal de plano TIM.
+- name: TIM Beta V2
+  imageUrl: /img/beta.png
+  description: Desenvolvimento de novo modelo de game e experiência unificada para usuários BETA.
   stack:
-    - name: Swift 4.0
-      imageUrl: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/swift/swift.png
-    - name: Xcode 10.2
-      imageUrl: /img/xcode.png
-
+    - name: .NET Core
+      imageUrl: https://raw.githubusercontent.com/github/explore/93d8a67084f94b2a444e510199a6e7622e5b09a3/topics/dotnet/dotnet.png
+    - name: Node
+      imageUrl: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png
+    - name: Kubernetes
+      imageUrl: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/kubernetes/kubernetes.png
+    - name: Mongo
+      imageUrl: 
+    - name: Kafka
+      imageUrl: 
+    - name: Google Cloud
+      imageUrl: /img/gcp.svg
+      
 - name: TIM Beta
   imageUrl: /img/beta.png
-  description: App nativo;  API's e Portais em Rails
+  description: Aplicação com foco em dinâmica de jogo para desbloqueio de benefícios do plano beta.
   stack:
     - name: Ruby on Rails
       imageUrl: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/rails/rails.png
@@ -23,7 +31,16 @@
       imageUrl: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png
     - name: Google Cloud
       imageUrl: /img/gcp.svg
-
+      
+- name: Meu TIM
+  imageUrl: /img/meu-tim.png
+  description: Aplicação nativa com foco em gestão pessoal de plano TIM.
+  stack:
+    - name: Swift 4.0
+      imageUrl: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/swift/swift.png
+    - name: Xcode 10.2
+      imageUrl: /img/xcode.png
+      
 - name: Chatbot TIM
   imageUrl: /img/watson.png
   description: Aplicação de chatbot via IBM Watson

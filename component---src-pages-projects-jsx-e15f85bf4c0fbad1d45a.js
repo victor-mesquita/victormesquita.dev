@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{hoZb:function(e,t,a){"use strict";a.r(t);var n=a("q1tI"),c=a.n(n),i=a("6uTu"),o=a("Wbzz"),r=a("STHm"),s=a("OKOb"),l=a.n(s);t.default=()=>{const{github:{viewer:e}}=Object(o.c)("899418737");return c.a.createElement(i.a,{personalData:e},c.a.createElement(r.a,{title:l.a.projects.title,icon:l.a.projects.icon,subTitle:l.a.projects.subTitle},c.a.createElement("div",null,"EM CONSTRUÇÃO")))}}}]);
+//# sourceMappingURL=component---src-pages-projects-jsx-e15f85bf4c0fbad1d45a.js.map

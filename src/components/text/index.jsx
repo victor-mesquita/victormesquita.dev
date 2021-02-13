@@ -3,8 +3,7 @@ import PropTypes from 'prop-types'
 
 function Text(props) {
   let text = props.value.toString().replace(/[^\\]\\n/g, '\n')
-  text = text.replace(/tag\[/g, "<span class='border-b-4 border-blue-400'>")
-  text = text.replace(/\]tag/g, '</span>')
+  text = checkTags(text)
 
   return (
     <div
@@ -14,6 +13,13 @@ function Text(props) {
       dangerouslySetInnerHTML={{ __html: text }}
     ></div>
   )
+}
+
+function checkTags(text) {
+  text = text.replace(/tag\[/g, "<span class='border-b-4 border-blue-400'>")
+  text = text.replace(/\]tag/g, '</span>')
+
+  return text
 }
 
 function classBinding(props) {

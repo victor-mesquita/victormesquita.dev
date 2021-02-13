@@ -5,7 +5,7 @@ import './content.scss'
 
 const Menu = ({ menuItems }) => {
   return (
-    <div className="menu flex md:flex-col flex-1 items-center gap-x-10 md:gap-y-4 md:mr-4">
+    <div className="menu flex md:flex-col flex-1 items-center gap-x-5 md:gap-y-4 md:mr-4">
       {menuItems.map((menu, index) => {
         const active = index === 0
         return (

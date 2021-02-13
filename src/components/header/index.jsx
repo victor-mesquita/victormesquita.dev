@@ -54,7 +54,7 @@ function UserProfileContainer({ children }) {
 function UserProfilePicture({ avatarUrl, userName }) {
   return (
     <img
-      className="rounded-full h-36"
+      className="rounded-full h-36 mt-10 md:mt-0"
       src={avatarUrl}
       alt={`foto de ${userName}`}
     ></img>

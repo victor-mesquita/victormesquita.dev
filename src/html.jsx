@@ -7,7 +7,7 @@ class HTML extends React.Component {
         <head>
           <meta name="description" content="Victor Mesquita - Desenvolvedor fullstack com experiência em .NET, Node, Ruby, React, Vue e Angular." />
           <meta property="og:title" content="Victor Mesquita - Desenvolvedor fullstack" />
-          <meta property="og:image" content="" />
+          <meta property="og:image" content="https://avatars.githubusercontent.com/u/5200285" />
           <meta property="og:description" content="Desenvolvedor fullstack com experiência em .NET, Node, Ruby, React, Vue e Angular." />
           <meta
             name="viewport"

@@ -1,4 +1,9 @@
-- name: victor-mesquita-developer
-  key: linkedin
-- name: victor-mesquita
-  key: stackoverflow
+- title: Sobre mim
+  path: /
+  color: '#38BDF8'
+- title: Projeto
+  path: /projects
+  color: '#7C3AED'
+- title: Contato
+  path: /contact
+  color: '#475569'

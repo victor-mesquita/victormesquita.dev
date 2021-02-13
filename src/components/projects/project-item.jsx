@@ -1,5 +1,4 @@
 import React from "react"
-import { Details } from "@primer/components"
 import useThemeContext from "../../hooks/theme-context"
 
 export default ({ name, description, imageUrl, stack }) => {
@@ -44,7 +43,7 @@ export default ({ name, description, imageUrl, stack }) => {
 
           <p className={`f3 ${style === "dark" ? "text-white" : ""}`}>{name}</p>
 
-          <Details overlay={true} className="width-full stack_button">
+          {/* <Details overlay={true} className="width-full stack_button">
             <summary
               className="btn btn-outline btn-block mb-2"
               aria-haspopup="dialog"
@@ -74,7 +73,7 @@ export default ({ name, description, imageUrl, stack }) => {
                 ))}
               </ul>
             </div>
-          </Details>
+          </Details> */}
         </div>
       </div>
     </>

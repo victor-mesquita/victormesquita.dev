@@ -3,7 +3,7 @@ import React from "react"
 class HTML extends React.Component {
   render() {
     return (
-      <html lang="en" className="min-height-full">
+      <html lang="en">
         <head>
           <meta name="description" content="Victor Mesquita - Desenvolvedor fullstack com experiência em .NET, Node, Ruby, React, Vue e Angular." />
           <meta property="og:title" content="Victor Mesquita - Projeto e Apps que desenvolvi" />
@@ -15,7 +15,7 @@ class HTML extends React.Component {
           />
           {this.props.headComponents}
         </head>
-        <body className="min-height-full" {...this.props.bodyAttributes}>
+        <body {...this.props.bodyAttributes}>
           <div
             id="___gatsby"
             dangerouslySetInnerHTML={{ __html: this.props.body }}

@@ -6,7 +6,7 @@ class HTML extends React.Component {
       <html lang="en">
         <head>
           <meta name="description" content="Victor Mesquita - Desenvolvedor fullstack com experiência em .NET, Node, Ruby, React, Vue e Angular." />
-          <meta property="og:title" content="Victor Mesquita - Projeto e Apps que desenvolvi" />
+          <meta property="og:title" content="Victor Mesquita - Desenvolvedor fullstack" />
           <meta property="og:image" content="" />
           <meta property="og:description" content="Desenvolvedor fullstack com experiência em .NET, Node, Ruby, React, Vue e Angular." />
           <meta

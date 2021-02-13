@@ -1,10 +1,8 @@
 import React, { useReducer, createContext } from "react"
-import { theme as primerTheme } from "@primer/components"
 
 // extend primer theme
 export const themes = {
   light: {
-    ...primerTheme,
     background: "#ffffff",
     iconColor: "#586069",
     textClass: "text-gray",
@@ -13,7 +11,6 @@ export const themes = {
     buttonBackground: null
   },
   dark: {
-    ...primerTheme,
     background: "#2f363d",
     iconColor: "#ffffff",
     textClass: "text-white",
@@ -65,7 +62,7 @@ const reducer = (state, { value, type }) => {
 
 const ThemeContext = createContext({
   state: initialState,
-  dispatch: () => {},
+  dispatch: () => { },
 })
 
 function ThemeContextProvider({ children }) {

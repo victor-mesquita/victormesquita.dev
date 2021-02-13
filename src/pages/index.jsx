@@ -1,11 +1,11 @@
-import React from "react"
-import Layout from "../components/layout"
-import Projects from "../components/projects"
-import { useStaticQuery, graphql } from "gatsby"
-import menu from "../data/menu.yml"
-import projects from "../data/projects.yml"
-import firebase from "gatsby-plugin-firebase"
-import "../../sass/style.scss"
+import React from 'react'
+import Layout from '../components/layout'
+import { useStaticQuery, graphql } from 'gatsby'
+import firebase from 'gatsby-plugin-firebase'
+import Section from '../components/section'
+import Timeline from '../components/timeline'
+import sectionsData from '../data/sections.yml'
+import timelineItems from '../data/timeline.yml'
 
 export default () => {
   const {
@@ -29,15 +29,29 @@ export default () => {
     `
   )
 
-  if (process.env.NODE_ENV !== "development") {
+  if (process.env.NODE_ENV !== 'development') {
     React.useEffect(() => {
-      firebase.analytics().logEvent("visited_index")
+      firebase.analytics().logEvent('visited_index')
     }, [])
   }
 
   return (
-    <Layout user={user}>
-      <Projects projects={projects} menu={menu}></Projects>
+    <Layout personalData={user}>
+      <>
+        <Section
+          title={sectionsData.aboutMe.title}
+          icon={sectionsData.aboutMe.icon}
+          subTitle={sectionsData.aboutMe.subTitle}
+        />
+
+        <Section
+          title={sectionsData.timeline.title}
+          icon={sectionsData.timeline.icon}
+          subTitle={sectionsData.timeline.subTitle}
+        >
+          <Timeline timelineItems={timelineItems}></Timeline>
+        </Section>
+      </>
     </Layout>
   )
 }

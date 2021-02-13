@@ -1,0 +1,21 @@
+aboutMe:
+  title: Sobre mim
+  subTitle:
+    Olá, sou tag[Victor Mesquita]tag, um apaixonado desenvolvedor de apps e serviços com experiência em amplas áreas do mercado.
+    Meu interesse pela área começou muito cedo e aos 13 anos eu já era um entusiasta da profissão. \n \n
+    Desde então tenho me dedicado a aprender cada vez mais tecnologias, buscando sempre novos conhecimentos e atualizações. \n
+    Atualmente tenho experiência em tecnologias de ponta do mercado, como tag[.NET Core]tag, tag[Kubernetes]tag, tag[Vuejs]tag, tag[React]tag e tag[NodeJs]tag. \n \n
+    Mas nunca acho que já sei o bastante, afinal de contas o aprendizado é tag[CONSTANT]tag. \n
+  icon: /img/check.png
+timeline:
+  title: Linha do tempo
+  subTitle: Conheca um pouco da minha história contada pelo tempo
+  icon: /img/time-line.png
+projects:
+  title: Projetos
+  subTitle: Conheca um pouco sobre os projetos no qual tive o prazer de trabalhar!
+  icon: /img/projects.svg
+contact:
+  title: Entre em contato
+  subTitle: Deseja entrar em contato? utilize minhas rede sociais ou meu e-mail
+  icon: /img/contact.svg

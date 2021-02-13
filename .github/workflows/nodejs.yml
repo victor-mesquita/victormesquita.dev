@@ -44,4 +44,4 @@ jobs:
         with:
           deploy_key: ${{ secrets.DEPLOY_KEY }}
           publish_dir: ./public
-          cname: victormesquita.dev
+          cname: www.victormesquita.dev

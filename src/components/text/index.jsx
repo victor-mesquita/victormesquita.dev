@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 
 function Text(props) {
   let text = props.value.toString().replace(/[^\\]\\n/g, '\n')
-  text = text.replaceAll('tag[', "<span class='border-b-4 border-blue-400'>")
-  text = text.replaceAll(']tag', '</span>')
+  text = text.replace(/tag\[/g, "<span class='border-b-4 border-blue-400'>")
+  text = text.replace(/\]tag/g, '</span>')
 
   return (
     <div

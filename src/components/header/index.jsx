@@ -28,13 +28,13 @@ function BackgroundPattern({ sizeX, sizeY }) {
   const amoutInYAxis = Math.ceil(sizeY / circleSpace)
 
   return (
-    <div className="flex-col gap-y-3 hidden md:flex">
+    <div className="flex-col hidden md:flex">
       {[...Array(amoutInYAxis)].map((yPosition, yIndex) => (
-        <div className="flex gap-x-3" key={yIndex}>
+        <div className="flex mb-3" key={yIndex}>
           {[...Array(amoutInXAxis)].map((xPosition, xIndex) => (
             <div
               key={xIndex}
-              className="rounded-full h-1 w-1 bg-gray-200"
+              className="rounded-full h-1 w-1 bg-gray-200 ml-3"
             ></div>
           ))}
         </div>
@@ -45,7 +45,7 @@ function BackgroundPattern({ sizeX, sizeY }) {
 
 function UserProfileContainer({ children }) {
   return (
-    <div className="flex-col flex gap-x-3 h-full items-center justify-center flex-1 md:flex-row md:-ml-16 md:justify-start">
+    <div className="flex-col flex h-full items-center justify-center flex-1 md:flex-row md:-ml-16 md:justify-start">
       {children}
     </div>
   )
@@ -54,7 +54,7 @@ function UserProfileContainer({ children }) {
 function UserProfilePicture({ avatarUrl, userName }) {
   return (
     <img
-      className="rounded-full h-36 mt-10 md:mt-0"
+      className="rounded-full h-36 mt-10 md:mt-0 mr-4"
       src={avatarUrl}
       alt={`foto de ${userName}`}
     ></img>
@@ -68,8 +68,8 @@ function UserProfileData({ name, bio, location }) {
 
       <Text size="md" value={bio} color="gray-600"></Text>
 
-      <div className="flex gap-x-1 mt-3">
-        <img className="h-5" src={pointImage} alt="Minha localidade" />
+      <div className="flex mt-3">
+        <img className="h-5 mr-1" src={pointImage} alt="Minha localidade" />
         <Text size="sm" value={location} color="gray-600"></Text>
       </div>
     </div>

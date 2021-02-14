@@ -6,7 +6,7 @@ import './content.scss'
 
 const Timeline = ({ timelineItems }) => {
   return (
-    <div className="flex flex-col items-start gap-y-4 p-10 ml-24 md:ml-52">
+    <div className="flex flex-col items-start p-10 ml-24 md:ml-52">
       {timelineItems.map((timeline, index) => {
         const isLastOne = index === timelineItems.length - 1
         const shouldHideClass = isLastOne ? 'hidden' : ''

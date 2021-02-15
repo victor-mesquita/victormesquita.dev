@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{w2EZ:function(t,e,a){"use strict";a.r(e);var c=a("q1tI"),n=a.n(c),i=a("6uTu"),o=a("Wbzz"),s=a("STHm"),u=a("OKOb"),l=a.n(u);e.default=()=>{const{github:{viewer:t}}=Object(o.useStaticQuery)("899418737");return n.a.createElement(i.a,{personalData:t},n.a.createElement(s.a,{title:l.a.contact.title,icon:l.a.contact.icon,subTitle:l.a.contact.subTitle,iconSize:"h-10"},n.a.createElement("div",{className:"bold"},"EM CONSTRUÇÃO")))}}}]);
+//# sourceMappingURL=component---src-pages-contact-jsx-048ff0520300cbbb03b4.js.map

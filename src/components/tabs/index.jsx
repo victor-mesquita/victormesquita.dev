@@ -36,7 +36,7 @@ const Tabs = props => {
     <div className="flex w-full flex-col">
       <ChildrenTabData {...props}></ChildrenTabData>
 
-      <div className="flex flex-col space-y-2 md:flex-row">{renderChildrenTabs(props)}</div>
+      <div className="flex flex-col space-y-2 md:space-y-0 md:space-x-2 md:flex-row">{renderChildrenTabs(props)}</div>
     </div>
   )
 }

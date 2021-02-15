@@ -8,7 +8,7 @@ const Projects = ({ projects }) => {
   const { theme } = useThemeContext()
 
   return (
-    <div className="flex flex-col w-full mt-10 space-y-10 md:flex-row md:space-x-10">
+    <div className="flex flex-col w-full mt-10 md:flex-row flex-wrap justify-center">
       {projects.map((project, index) => (
         <ProjectItem key={index} {...project}></ProjectItem>
       ))}

@@ -2,7 +2,9 @@ import React from 'react'
 import Layout from '../components/layout'
 import { useStaticQuery, graphql } from 'gatsby'
 import Section from '../components/section'
+import Projects from '../components/projects'
 import sectionsData from '../data/sections.yml'
+import projectsData from '../data/projects.yml'
 
 export default () => {
   const {
@@ -32,9 +34,8 @@ export default () => {
         icon={sectionsData.projects.icon}
         subTitle={sectionsData.projects.subTitle}
       >
-        <div>EM CONSTRUÇÃO</div>
-        </Section>
-
+        <Projects projects={projectsData}></Projects>
+      </Section>
     </Layout>
   )
 }

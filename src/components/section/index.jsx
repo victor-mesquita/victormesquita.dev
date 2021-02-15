@@ -5,7 +5,7 @@ import './content.scss'
 
 const Section = props => {
   return (
-    <div className="flex flex-col w-full items-center px-10 py-20">
+    <div className="flex flex-col w-full items-center px-8 py-20 md:px-10">
       <SectionTitle {...props} />
       <Text
         className="max-w-6xl"

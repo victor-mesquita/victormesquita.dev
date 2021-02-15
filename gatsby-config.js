@@ -28,8 +28,6 @@ module.exports = {
         fieldName: 'github',
         url: 'https://api.github.com/graphql',
         headers: {
-          Authorization: `bearer ${process.env.NODE_ENV == "production" ? process.env.KEY_GH : 'ac833894fb32359b56044a52a645aef9f5b52bba'}`,
-        }
           Authorization: `bearer ${
             process.env.NODE_ENV == 'production'
               ? process.env.KEY_GH
@@ -50,7 +48,7 @@ module.exports = {
         name: `VictorMesquita`,
         short_name: `vm`,
         start_url: `/`,
-        icon: `static/icon.png`
+        icon: `static/icon.png`,
       },
     },
     {

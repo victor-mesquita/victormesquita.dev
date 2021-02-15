@@ -28,7 +28,7 @@ export default props => {
           <Text
             value={props.description}
             size="lg"
-            color="gray-400"
+            color="gray-600"
             className="my-10 mx-4"
           />
         </Tab>
@@ -37,7 +37,7 @@ export default props => {
             {props.responsabilities.map(responsability => (
               <div className="flex items-center">
                 <img className="h-4 mr-2" src="/img/star.png" />
-                <li className="text-gray-400">{responsability}</li>
+                <li className="text-gray-600">{responsability}</li>
               </div>
             ))}
           </ul>
@@ -47,7 +47,7 @@ export default props => {
             {props.stacks.map(stack => (
               <div className="flex items-center">
                 <img className="h-4 mr-2" src={stack.imageUrl} />
-                <li className="text-gray-400">{stack.name}</li>
+                <li className="text-gray-600">{stack.name}</li>
               </div>
             ))}
           </ul>

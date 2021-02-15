@@ -42,7 +42,7 @@ const Tabs = props => {
 }
 
 Tabs.propTypes = {
-  children: PropType.element.isRequired,
+  children: PropType.array.isRequired
 }
 
 export default Tabs

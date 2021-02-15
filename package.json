@@ -44,7 +44,6 @@
     "@storybook/react": "^6.1.17",
     "autoprefixer": "^10.2.4",
     "babel-loader": "^8.2.2",
-    "flex-gap-polyfill": "^2.2.1",
     "gh-pages": "^2.2.0",
     "postcss": "^8.2.6",
     "prettier": "^1.19.1",

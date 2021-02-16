@@ -20,7 +20,7 @@ export default props => {
   const { theme, style } = useThemeContext()
 
   return (
-    <div className="rounded shadow p-6 mr-10 mb-10 md:w-2/4 max-w-lg">
+    <div className="rounded shadow p-6 md:max-w-lg mb-10 md:w-2/4 md:mr-10">
       <ProjectHeader {...props}></ProjectHeader>
 
       <Tabs>

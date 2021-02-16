@@ -102,6 +102,7 @@
 
 - name: TIM EasyVendas
   period: aprox. 1,5 ano
+  imageUrl: /img/meu-tim.png
   description: Aplicação de vendas com foco em B2B
   responsabilities: 
     - Desenvolvimento frontend e backend

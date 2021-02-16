@@ -30,7 +30,7 @@ module.exports = {
         headers: {
           Authorization: `bearer ${
             process.env.NODE_ENV == 'production'
-              ? 'cee713e97aec68b0bb7b78c7fa5b566da52bd6df'
+              ? process.env.KEY_GH
               : 'cee713e97aec68b0bb7b78c7fa5b566da52bd6df'
           }`,
         },

@@ -30,16 +30,10 @@ module.exports = {
         headers: {
           Authorization: `bearer ${
             process.env.NODE_ENV == 'production'
-              ? process.env.KEY_GH
-              : 'c6410b64624a71796c834c76b1a05a9db60ab2b6'
+              ? 'cee713e97aec68b0bb7b78c7fa5b566da52bd6df'
+              : 'cee713e97aec68b0bb7b78c7fa5b566da52bd6df'
           }`,
         },
-      },
-    },
-    {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        precachePages: [`/`],
       },
     },
     {

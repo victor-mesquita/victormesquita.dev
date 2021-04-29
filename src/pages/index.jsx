@@ -49,7 +49,7 @@ export default () => {
           icon={sectionsData.timeline.icon}
           subTitle={sectionsData.timeline.subTitle}
         >
-          <Timeline timelineItems={timelineItems}></Timeline>
+          //<Timeline timelineItems={timelineItems}></Timeline>
         </Section>
       </>
     </Layout>

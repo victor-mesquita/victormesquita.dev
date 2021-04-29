@@ -43,14 +43,6 @@ export default () => {
           icon={sectionsData.aboutMe.icon}
           subTitle={sectionsData.aboutMe.subTitle}
         />
-
-        <Section
-          title={sectionsData.timeline.title}
-          icon={sectionsData.timeline.icon}
-          subTitle={sectionsData.timeline.subTitle}
-        >
-          //<Timeline timelineItems={timelineItems}></Timeline>
-        </Section>
       </>
     </Layout>
   )
